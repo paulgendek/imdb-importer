@@ -23,7 +23,7 @@ require_once 'vendor/autoload.php';
 use ImdbImporter\Importer;
 
 // Change FILE to the location of your input json data file
-$input = json_decode(file_get_contents('FILE.json'));
+$input = json_decode(file_get_contents('FILE.json'), true);
 // Another option
 // $input = [['title' => 'The Mask', 'rating' => '5.0']];
 // Change ID_FROM_COOKIE
@@ -43,7 +43,7 @@ require_once 'vendor/autoload.php';
 
 use ImdbImporter\Importer;
 
-$input = json_decode(file_get_contents('my_ratings.json'));
+$input = json_decode(file_get_contents('my_ratings.json'), true);
 $id = 'BCYj3D0pzQplRCdWOk999sALuG13hRj53tUCHy5SPlDT7GjcRHw0K-CWnzGsJPg8VC5jEw64mlaSucVtkCjKhvKZYO2SQ0CSTbspanBkgCdqHwRAlx_3h64JcwJLcU3Mmz2OTPr6BC7zrHzozJZ0BcsTNeEXLcsggl7-RsEIFYEnqdE';
 $rating_base = 5;
 
